@@ -13,11 +13,11 @@ Feature: Hacker News REST API validation
     When I send and accept JSON
     And I send a GET request to "http://forecast.weather.gov/MapClick.php?lat=45.68444&lon=-121.51806&FcstType=json"
     Then the response status should be "200"
-    And the JSON response should follow "features/schemas/noaa.json"
+    And the JSON response should follow "features/schemas/test.json"
     Then the JSON response root should be object
     # Then the JSON response should have optional key "elevation" of type object or null
     Then the JSON response should have key "currentobservation"
-    When I grab "dependencies" as "name"
+    When I grab "type" as "name"
     Then the JSON response should have required key "time" of type object
     Then the JSON response should have key "productionCenter"
     When I send a GET request to "http://forecast.weather.gov/MapClick.php?lat=38.4247341&lon=-86.9624086&FcstType=json" with: 
