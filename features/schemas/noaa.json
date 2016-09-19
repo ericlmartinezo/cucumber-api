@@ -1,0 +1,20 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "type": "object",
+  "default": {
+            "type": "any"
+        },
+
+ "dependencies": {
+    "type": "object",
+    "additionalProperties": {
+        "type": [ "string", "array", { "$ref": "#" } ],
+        "items": {
+            "type": "string"
+        
+        }
+     },
+    "deault": { }
+   }
+
+ }

@@ -3,6 +3,13 @@
   "type": "text",
     "currentobservation": {"type": "text"
 
+   },
+        "definitions": {
+            "type": "object",
+            "additionalProperties": { "$ref": "#" },
+            "default": {}
+        }
+
   }
   
 }
