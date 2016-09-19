@@ -1,0 +1,8 @@
+{
+  "$.ajax": "forecast.weather.gov/MapClick.php?lat=38.4247341&lon=-86.9624086&FcstType=json/",
+  "type": "text",
+    "currentobservation": {"type": "text"
+
+  }
+  
+}
