@@ -17,7 +17,7 @@ Feature: Hacker News REST API validation
     Then the JSON response should have optional key "elevation" of type object or null
   #Then the JSON response should have (required|optional) key "location" of type object or null
     Then the JSON response should have value "Tonight"
-    When I send a GET request to "http://forecast.weather.gov/MapClick.php?lat=38.4247341&lon=-86.9624086&FcstType=json" with:
+  #  When I send a GET request to "http://forecast.weather.gov/MapClick.php?lat=38.4247341&lon=-86.9624086&FcstType=json" with:
        | time            | pretty |
        | Tonight        | true   |
 
