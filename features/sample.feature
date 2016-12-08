@@ -1,7 +1,7 @@
 # https://github.com/HackerNews/API
 Feature: Hacker News REST API validation
 
-  @scenario0
+  @scenario0 @jenkins
   Scenario: Verify top stories JSON schema
     When I send and accept JSON
     And I send a GET request to "https://hacker-news.firebaseio.com/v0/topstories.json?print=pretty"
